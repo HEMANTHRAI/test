@@ -1,0 +1,33 @@
+<html ng-app='myApp'>
+		<head>
+				<title>TV shows </title>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+						<script src="app/app.js"></script>
+				<!--<script src="app/controllers/homecontrol.js"></script>
+				<script src="app/controllers/forecatecontrol.js"></script>
+				<script src="app/servieces/transform.js"></script>
+				//<script src="app/servieces/stringperfect.js"></script>-->
+				<script src="app/controllers/myShows.js"></script>
+				<script src="app/controllers/whatsOn.js"></script>
+				<script src="app/controllers/search.js"></script>
+		</head>
+	<body>
+			<header>
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+							<a class="navbar-brand" href="#">TvTracker</a>
+					</div>
+					<ul class="nav navbar-nav navbar-left">
+						<li><a ui-sref="whatson">what's on</a></li>
+						<li><a ui-sref="My shows">My Shows</a></li>
+						<li><a ui-sref="search">Search</a></li>
+
+					</ul>
+				</nav>
+			</header>
+			<div class="container" ui-view>
+			</div>
+	</body>
+</html>
